@@ -57,11 +57,11 @@ else:
     # Add other chunks as needed and combine them
     similarity = sparse.vstack([similarity_chunk_0])
 
-    st.header('Movie Recommender System')
+    st.header('SuggestMeMovie')
 
     movie_list = movies['title'].values
     selected_movie = st.selectbox(
-        "Type or select a movie from the dropdown",
+        "Type or select a movie from the dropdown for suggestions :",
         movie_list
     )
 
